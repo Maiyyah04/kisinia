@@ -7,7 +7,7 @@ djangorestframework_simplejwt==5.5.1
 drf-yasg==1.21.10
 gunicorn==23.0.0
 Pillow==11.1.0
-psycopg[binary]==3.2.3
+psycopg[binary]==3.3.3
 PyJWT==2.10.1
 sqlparse==0.5.5
 tzdata==2025.3

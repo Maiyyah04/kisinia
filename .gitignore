@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+project_kisinia/.git_embedded_backup/
+project_kisinia/media/
+project_kisinia/db.sqlite3
+project_kisinia/db_backup*.json
+project_kisinia/*.png
+project_kisinia/*.jpg
+project_kisinia/*.jpeg
+project_kisinia/*.webp
+frontend/

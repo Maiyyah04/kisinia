@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: project-kisinia
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirement.txt"
+    startCommand: "python manage.py migrate && python manage.py runserver 0.0.0.0:$PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        value: "postgresql://neondb_owner:npg_gtrC25MfARql@ep-billowing-truth-aiw66al5-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+      - key: ALLOWED_HOSTS
+        value: project-kisinia.onrender.com
+      - key: MEDIA_ROOT
+        value: /opt/render/project/src/media

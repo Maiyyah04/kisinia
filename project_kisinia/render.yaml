@@ -18,3 +18,5 @@ services:
         value: project-kisinia.onrender.com
       - key: MEDIA_ROOT
         value: /opt/render/project/src/media
+      - key: PGOPTIONS
+        value: -c search_path=public

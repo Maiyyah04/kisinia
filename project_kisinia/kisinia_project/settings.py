@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
 
-    'core',
+    'core.apps.CoreConfig',
 ]
 
 if HAS_DRF_YASG:
